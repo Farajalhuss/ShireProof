@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+:root {
+  --background: #eef4f7;
+  --foreground: #07111f;
+  --shire-brand: #087f75;
+  --shire-brand-dark: #075f58;
+  --shire-ink: #07111f;
+  --shire-muted: #607086;
+  --shire-shell: #101827;
+  --shire-surface: #ffffff;
+  --shire-surface-soft: #f7fafc;
+  --shire-border: #d7e1ea;
+  --shire-job: #b7791f;
+  --shire-job-soft: #fff7df;
+  --shire-report: #047857;
+  --shire-report-soft: #eafaf3;
+  --shire-team: #a43f68;
+  --shire-team-soft: #fff0f5;
+  --shire-info: #2563eb;
+  --shire-warning: #b45309;
+  --shire-danger: #c1121f;
+  --shire-success: #047857;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: Arial, Helvetica, sans-serif;
+  --font-mono: "Courier New", Courier, monospace;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+::selection {
+  background: #99f6e4;
+  color: #0f172a;
+}
+
+button,
+a,
+input,
+select,
+textarea {
+  letter-spacing: 0;
+}
