@@ -213,7 +213,7 @@ async function inviteTechnician(formData: FormData) {
 
   const { data, error } = await admin.auth.admin.inviteUserByEmail(email, {
     data: inviteMetadata,
-    redirectTo: `${origin}/accept-invite`,
+    redirectTo: origin,
   });
 
   let invitedUserId = data.user?.id ?? null;
@@ -252,7 +252,7 @@ async function inviteTechnician(formData: FormData) {
     const { error: resetError } = await supabase.auth.resetPasswordForEmail(
       email,
       {
-        redirectTo: `${origin}/accept-invite`,
+        redirectTo: origin,
       },
     );
 

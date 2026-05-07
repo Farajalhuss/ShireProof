@@ -2,6 +2,10 @@
 
 Use these in Supabase Dashboard -> Authentication -> Emails -> Templates.
 
+Important: ShireProof passes the base app URL as `redirectTo`, such as
+`https://shireprooflaunch.vercel.app`. The templates below append
+`/auth/confirm` themselves.
+
 ## Invite User
 
 Subject:
@@ -70,7 +74,6 @@ For local testing:
 Site URL: http://localhost:3000
 Redirect URLs:
 http://localhost:3000/**
-http://localhost:3000/accept-invite
 ```
 
 For private Vercel staging:
